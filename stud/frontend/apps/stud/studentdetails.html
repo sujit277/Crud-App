@@ -1,0 +1,29 @@
+<!--
+(C) 2020 TekMonks. All rights reserved.
+License: MIT - see enclosed license.txt file.
+-->
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="pragma" content="no-cache">
+ <meta http-equiv="expires" content="-1">
+ <meta name=viewport content="width=device-width, initial-scale=1.0,
+minimum-scale=0.5 maximum-scale=1.0">
+ <title>Stud</title>
+
+ <!-- Include the monkshu framework -->
+ <script type="text/javascript" src="/framework/js/$$.js"></script>
+<!-- And off we go ... -->
+<script type="text/javascript">$$.boot(new URL("./", window.location));</script>
+<script type="module">
+    import { form_stud } from "./components/form-stud/form-stud.mjs"; form_stud.register();
+</script>
+
+</head>
+<body style="background-color: aquamarine;">
+    <h1 style="text-align: center;color: red;">Welcome to Saraswati ShiShu Vidya Mandir</h1>
+    <h1 style="text-align: center;color: black;">Student Imformation</h1>
+    <form-stud></form-stud>
+</body>
+</html>
